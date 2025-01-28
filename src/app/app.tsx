@@ -1,12 +1,13 @@
-// Uncomment this line to use CSS modules
-// import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/home/home';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="remote" />
-    </div>
+    <Routes>
+      <Route path="/"
+        element={<Home />}
+      />
+    </Routes>
   );
 }
 
